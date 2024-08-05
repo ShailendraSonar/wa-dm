@@ -35,7 +35,7 @@ const WhatsAppChat = () => {
   };
 
   const openHistoryPage = () => {
-    window.open('/chat-history', '_blank');
+    window.open('/chat-history');
   };
 
   return (
