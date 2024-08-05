@@ -12,9 +12,16 @@ function App() {
     <>
     
 
-    <Router>
+    {/* <Router>
     <Routes>
       <Route path="/" element={<Whatappchat/>} />
+      <Route path="/chat-history" element={<ChatHistory />} />
+    </Routes>
+  </Router> */}
+
+<Router>
+    <Routes>
+      <Route path="/" element={<Whatappchat />} />
       <Route path="/chat-history" element={<ChatHistory />} />
     </Routes>
   </Router>

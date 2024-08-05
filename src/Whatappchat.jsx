@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect } from 'react';
-import './card.css'
+import { useNavigate } from 'react-router-dom';
+import './card.css';
 
 const historyReducer = (state, action) => {
   switch (action.type) {
@@ -15,6 +16,7 @@ const historyReducer = (state, action) => {
 const WhatsAppChat = () => {
   const [phoneNumber, setPhoneNumber] = React.useState('+91');
   const [history, dispatch] = useReducer(historyReducer, []);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const savedHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
@@ -35,7 +37,7 @@ const WhatsAppChat = () => {
   };
 
   const openHistoryPage = () => {
-    window.open('/chat-history');
+    navigate('/chat-history');
   };
 
   return (
