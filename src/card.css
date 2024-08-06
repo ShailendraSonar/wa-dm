@@ -129,3 +129,18 @@
     position: absolute;
     bottom: 20px;
   }
+
+  .h1_open_wa{
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 70px;
+    font-family: monospace;
+  }
+
+  .p_shailendra{
+    color: white;
+  }
+  .span_shail{
+      color: green;
+  }

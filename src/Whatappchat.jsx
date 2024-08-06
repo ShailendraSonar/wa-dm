@@ -41,8 +41,10 @@ const WhatsAppChat = () => {
   };
 
   return (
+    <>
     <div className='card'>
       <div>
+        <h1 className='h1_open_wa'>Open Whatsapp Directly</h1>
         <input
           className='input_card'
           type="text"
@@ -58,6 +60,8 @@ const WhatsAppChat = () => {
         Chat History
       </button>
     </div>
+    <p className='p_shailendra'>Developer <span className='span_shail'>@Shailendra</span></p>
+    </>
   );
 };
 
